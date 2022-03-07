@@ -5,10 +5,24 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>StopWar</title>
-		<link rel="stylesheet" href="./css/reset.css" />
-		<link rel="stylesheet" href="./css/font.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/font.css" />
 		<style>
 			/* 스타일 작성 */
+			.news-category {
+				display: flex;
+				gap: 8px;
+				justify-content: center;
+			}
+			.category-bg {
+				border: 1px solid black;
+				border-radius: 40px;
+				background-color: aliceblue;
+			}
+			.category-tit {
+				padding: 4px 17px;
+				font-size: 16px;
+			}
 		</style>
 	</head>
 
@@ -34,6 +48,35 @@
 			<!-- //제목 및 검색  -->
 
 			<!-- 카테고리 : 조미진, 최성이 -->
+			<ul class="news-category">
+				<li class="category-bg">
+					<span class="category-tit">ALL</span>
+				</li>
+				<li class="category-bg">
+					<span class="category-tit">역사</span>
+				</li>
+				<li class="category-bg">
+					<span class="category-tit">규제</span>
+				</li>
+				<li class="category-bg">
+					<span class="category-tit">협상 진행 과정</span>
+				</li>
+				<li class="category-bg">
+					<span class="category-tit">지역 라이브 상황</span>
+				</li>
+				<li class="category-bg">
+					<span class="category-tit">피해 상황</span>
+				</li>
+				<li class="category-bg">
+					<span class="category-tit">교전 최신 상황</span>
+				</li>
+				<li class="category-bg">
+					<span class="category-tit">후원</span>
+				</li>
+				<li class="category-bg">
+					<span class="category-tit">카테고리</span>
+				</li>
+			</ul>
 			<!-- //카테고리 -->
 
 			<!-- 뉴스카드 : 윤수영, 박지윤, 지다혜 -->
