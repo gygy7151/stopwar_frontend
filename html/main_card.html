@@ -9,6 +9,59 @@
   <link rel="stylesheet" href="../css/reset.css" />
   <link rel="stylesheet" href="../css/font.css" />
   <style>
+    #news{
+      width:1053px;
+      padding:49px 128px 77px 108px;
+      box-sizing:border-box;
+    }
+
+    .main-header{
+      display:flex;
+      justify-content: space-between;
+      width:100%;
+      margin-bottom:24px;
+    }
+
+    h2{
+      color:#015BBB;
+      font-size:32px;
+      font-weight: 700;
+    }
+
+    .search{
+      position:relative;
+      background-color: #F5F5F5;
+      border-radius:40px;
+      width:312px;
+      height:40px;
+    }
+
+    .search-input{
+      position:relative;
+      border:none;
+      margin-left:33px;
+      background-color:transparent;
+      width:75%;
+      height:100%;
+    }
+
+    .search-input::placeholder{
+      font-size:14px;
+      color:#000000;
+      line-height:40px;
+      opacity:0.4;
+    }
+    .search-input:focus{
+      outline:none;
+    }
+    .search-img{
+      position:absolute;
+      top:12.25px;
+      right:18.25px;
+      width:18.5px;
+      height:18.5px;
+    }
+
     .news-card-list li:last-child {
       margin-bottom: 77px;
     }
@@ -114,7 +167,7 @@
   </ul>
   <!-- //skip -->
 
-  <!-- header : 김초연 , 김상돈 -->
+  <!-- header : 김초연 , 김상돈 border-bottom 부탁드릴게요!-->
   <header>
     <h1>StopWar</h1>
   </header>
@@ -122,9 +175,15 @@
 
   <!-- main : 뉴스 -->
   <main id="news">
-    <!-- 제목 및 검색 : 유현세 -->
-    <!-- 현세님 메인 마진, 패딩, 보더박스 잡아주세요 :) -->
-    <h2>뉴스정보</h2>
+    <!-- 제목 및 검색 : 유현세,정시찬 -->
+    <div class="main-header">
+      <h2>뉴스정보</h2>
+      <form class="search">
+        <input class="search-input" type="text" placeholder="검색어를 입력하세요" onfocus="this.placeholder=''" onblur="this.placeholder='검색어를 입력하세요'">
+        <img class ="search-img" src="../image/search.svg">
+      </form>
+    </div>
+
 
     <!-- //제목 및 검색  -->
 
