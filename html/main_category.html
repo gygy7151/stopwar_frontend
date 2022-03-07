@@ -10,19 +10,30 @@
 		<style>
 			/* 스타일 작성 */
 			.news-category {
-				display: flex;
-				gap: 8px;
-				justify-content: center;
-			}
-			.category-bg {
-				border: 1px solid black;
-				border-radius: 40px;
-				background-color: aliceblue;
-			}
-			.category-tit {
-				padding: 4px 17px;
-				font-size: 16px;
-			}
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+      }
+      .category-bg {
+        margin: 0 8px;
+        padding: 4px;
+        border: 1px solid #CCCCCC;
+        border-radius: 40px;
+        background: rgba(204, 204, 204, 0.1);
+        color: #767676;
+      }
+      .category-bg:hover, .category-bg:active {
+        border: 1px solid #015BBB;
+        background: rgba(1, 91, 187, 0.1);
+        color:#015BBB;
+      }
+      .category-tit {
+        padding: 4px 17px;
+        font-size: 16px;
+        color: inherit;
+        cursor: pointer;
+      }
+
 		</style>
 	</head>
 
