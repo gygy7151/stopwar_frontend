@@ -10,19 +10,30 @@
 		<style>
 			/* 스타일 작성 */
 			.news-category {
-				display: flex;
-				gap: 8px;
-				justify-content: center;
-			}
-			.category-bg {
-				border: 1px solid black;
-				border-radius: 40px;
-				background-color: aliceblue;
-			}
-			.category-tit {
-				padding: 4px 17px;
-				font-size: 16px;
-			}
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+      }
+      .category-bg {
+        margin: 0 8px;
+        padding: 4px;
+        border: 1px solid #CCCCCC;
+        border-radius: 40px;
+        background: rgba(204, 204, 204, 0.1);
+        color: #767676;
+      }
+      .category-bg:hover, .category-bg:active {
+        border: 1px solid #015BBB;
+        background: rgba(1, 91, 187, 0.1);
+        color:#015BBB;
+      }
+      .category-tit {
+        padding: 4px 17px;
+        font-size: 16px;
+        color: inherit;
+        cursor: pointer;
+      }
+
 		</style>
 	</head>
 
@@ -50,31 +61,31 @@
 			<!-- 카테고리 : 조미진, 최성이 -->
 			<ul class="news-category">
 				<li class="category-bg">
-					<span class="category-tit">ALL</span>
+					<button class="category-tit all-btn">ALL</button>
 				</li>
 				<li class="category-bg">
-					<span class="category-tit">역사</span>
+					<button class="category-tit history-btn">역사</button>
 				</li>
 				<li class="category-bg">
-					<span class="category-tit">규제</span>
+					<button class="category-tit regul-btn">규제</button>
 				</li>
 				<li class="category-bg">
-					<span class="category-tit">협상 진행 과정</span>
+					<button class="category-tit nego-btn">협상 진행 과정</button>
 				</li>
 				<li class="category-bg">
-					<span class="category-tit">지역 라이브 상황</span>
+					<button class="category-tit live-btn">지역 라이브 상황</button>
 				</li>
 				<li class="category-bg">
-					<span class="category-tit">피해 상황</span>
+					<button class="category-tit damage-btn">피해 상황</button>
 				</li>
 				<li class="category-bg">
-					<span class="category-tit">교전 최신 상황</span>
+					<button class="category-tit combat-btn">교전 최신 상황</button>
 				</li>
 				<li class="category-bg">
-					<span class="category-tit">후원</span>
+					<button class="category-tit sponsor-btn">후원</button>
 				</li>
 				<li class="category-bg">
-					<span class="category-tit">카테고리</span>
+					<button class="category-tit category-btn">카테고리</button>
 				</li>
 			</ul>
 			<!-- //카테고리 -->
